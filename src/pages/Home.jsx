@@ -70,7 +70,7 @@ function Home() {
     <div className="h-screen w-full flex">
       <div className="w-1/2 h-screen relative">
         <img className="h-full w-full" src={bg} alt="bg" />
-        <p className="absolute z-10 bottom-[100px] px-[40px] text-white font-black leading-[77px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[55px]"
+        <p className="absolute z-10 bottom-[100px] px-[40px] text-white font-black leading-[77px] md:text-[40px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px]"
         >
           Discover new things on Superapp
         </p>
@@ -141,7 +141,7 @@ function Home() {
           </div>
           {error.checkbox && <span style={{ color: "red"}}>{error.checkbox}</span>}
 
-          <button style={{backgroundColor:"#72DB73", borderRadius:"30px", lineHeight:"31px",fontSize:"20px"}} className="text-white py-1 my-3" type="submit">SIGN UP</button>
+          <button style={{fontWeight:"600"}} className="text-white py-1 my-3 text-[20px] leading-[31px] rounded-[30px] bg-[#72DB73]" type="submit">SIGN UP</button>
           <p className="text-[#7C7C7C] text-[16px]">By clicking on Sign up. you agree to Superapp <span className="text-[#72DB73]">Terms and Conditions of Use</span></p>
           <p className="text-[#7C7C7C] mt-2 text-[16px]">To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span className="text-[#72DB73]">Privacy Policy</span></p>
         </form>
