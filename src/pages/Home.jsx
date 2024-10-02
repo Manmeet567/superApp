@@ -46,7 +46,7 @@ function Home() {
       errors.mobile = "Mobile is required";
     }
     if (!data.checkbox) {
-      errors.checkbox = "Checkbox is required";
+      errors.checkbox = "Check this box if you want to proceed";
     }
 
     setError(errors);

@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/selection" element={<Selection />} />
+        
 
         <Route path='*' element={<NotFound />} />
       </Routes>
