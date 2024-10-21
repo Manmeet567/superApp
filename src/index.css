@@ -18,3 +18,11 @@
 .dm-sans{
     font-family: 'DM Sans', sans-serif;
 }
+.notes-area::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+.notes-area::-webkit-scrollbar-thumb{
+    background-color: #FFE6A6;
+    border-radius: 17px;
+}

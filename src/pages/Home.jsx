@@ -53,7 +53,6 @@ function Home() {
     if (Object.keys(errors).length > 0) {
       return;
     } else {
-      console.log(data);
       localStorage.setItem("user", JSON.stringify(data));
       setData({
         name: "",

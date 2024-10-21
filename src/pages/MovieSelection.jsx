@@ -15,9 +15,9 @@ export default function Selection() {
       alert("Please select atleast 3 movies");
       return;
     } else {
-      localStorage.setItem("selectedMovies", JSON.stringify(selectedMovies));
+      localStorage.setItem("categories", JSON.stringify(selectedMovies));
       setSelectedMovies([]);
-      navigate("/info");
+      navigate("/dashboard");
     }
   };
 
