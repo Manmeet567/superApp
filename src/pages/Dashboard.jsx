@@ -3,6 +3,7 @@ import ProfileWidget from "../components/ProfileWidget";
 import NotesWidget from "../components/NotesWidget";
 import NewsWidget from "../components/NewsWidget";
 import WeatherWidget from "../components/WeatherWidget";
+import TimerWidget from "../components/TimerWidget";
 
 function Dashboard() {
   const [news, setNews] = useState({});
@@ -96,7 +97,9 @@ function Dashboard() {
             </div>
             <NotesWidget />
           </div>
-          <div className="timer w-full bg-[#1E2343] h-[38%]"></div>
+          <div className="timer w-full bg-[#1E2343] h-[38%] rounded-[19px] py-3 px-5">
+            <TimerWidget />
+          </div>
         </div>
         {news ? (
           <NewsWidget news={news} />
@@ -106,7 +109,11 @@ function Dashboard() {
           </div>
         )}
       </div>
-      <button className="bg-white">Browse</button>
+      <div className="w-full flex justify-end mt-5">
+        <button className="bg-[#148A08] rounded-full text-[23px] text-white dm-sans text-center w-[170px]">
+          Browse
+        </button>
+      </div>
     </div>
   );
 }
