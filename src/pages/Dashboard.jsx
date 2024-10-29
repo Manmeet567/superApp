@@ -4,6 +4,7 @@ import NotesWidget from "../components/NotesWidget";
 import NewsWidget from "../components/NewsWidget";
 import WeatherWidget from "../components/WeatherWidget";
 import TimerWidget from "../components/TimerWidget";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   const [news, setNews] = useState({});
@@ -110,9 +111,11 @@ function Dashboard() {
         )}
       </div>
       <div className="w-full flex justify-end mt-5">
-        <button className="bg-[#148A08] rounded-full text-[23px] text-white dm-sans text-center w-[170px]">
-          Browse
-        </button>
+        <Link to='/browse'>
+          <button className="bg-[#148A08] rounded-full text-[23px] text-white dm-sans text-center w-[170px]">
+            Browse
+          </button>
+        </Link>
       </div>
     </div>
   );

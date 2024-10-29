@@ -17,7 +17,7 @@ export default function Selection() {
     } else {
       localStorage.setItem("categories", JSON.stringify(selectedMovies));
       setSelectedMovies([]);
-      navigate("/dashboard");
+      navigate("/");
     }
   };
 
